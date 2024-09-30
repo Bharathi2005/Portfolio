@@ -5,16 +5,16 @@
     width: 250px;
     height: 280px;
     border-radius: 20px;
-    background: #f5f5f5;
+    background-color: white;
     position: relative;
     padding: 1.8rem;
-    border: 2px solid #c3c6ce;
+    border: 2px solid white;
     transition: 0.5s ease-out;
     overflow: visible;
    }
    
    .card-details {
-    color: black;
+    color: white;
     height: 100%;
     gap: .5em;
     display: grid;
@@ -26,8 +26,8 @@
     width: 60%;
     border-radius: 1rem;
     border: none;
-    background-color:rgb(105, 103, 103);;
-    color: #fff;
+    background-color:rgb(78, 250, 193);
+    color: black;
     font-size: 1rem;
     padding: .5rem 1rem;
     position: absolute;
@@ -35,25 +35,47 @@
     bottom: 0;
     opacity: 0;
     transition: 0.3s ease-out;
+    font-weight: bold;
    }
    
    .text-body {
-    color: rgb(134, 134, 134);
+    color: rgb(78, 250, 193);
    }
    
    
    .text-title {
     font-size: 1.5em;
     font-weight: bold;
+   
    }
    
    .card:hover {
-    border-color: rgb(105, 103, 103);
+    border: rgb(78, 250, 193) 2px solid;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   
+   }
+   .name{
+    color:black;
    }
    
-   .card:hover .card-button {
+   .card:hover .card-button  {
     transform: translate(-50%, 50%);
     opacity: 1;
-    background-color:rgb(105, 103, 103);
+    
+    background-color:rgb(78, 250, 193);
    }
+   body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; 
+    margin: 0;
+    padding: 0;
+  }
+  .back{
+    background-color: rgb(78, 250, 193);
+    color: #333;
+    font-weight:bold;
+    border-radius:10px;
+  }
+  

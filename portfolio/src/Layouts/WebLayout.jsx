@@ -1,24 +1,15 @@
-import React, { Suspense } from 'react'
-import Navbar from '../components/Navbar'
-import { Outlet } from 'react-router-dom'
+import React, { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
 
 const WebLayout = () => {
-    const isloggedin = true
-
     return (
-        <>
-            <div className='h-screen w-screen overflow-x-hidden '>
-
-                <Navbar/>
+        <div className='h-screen w-screen overflow-hidden'>
+            <Suspense fallback={"loading"}>
+                <Outlet />
                 
-                        <Suspense fallback={"loading"}>
-                            <Outlet/>
-                        </Suspense>
-
-                    
-            </div>
-        </>
-    )
+            </Suspense>
+        </div>
+    );
 }
 
-export default WebLayout
+export default WebLayout;
